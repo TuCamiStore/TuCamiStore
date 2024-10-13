@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuCamiStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script> <!-- Agrega Stripe.js -->
+</head>
+<body>
+    <h1>Tienda de Camisetas</h1>
+    <div id="products">
+        <!-- Ejemplo de producto -->
+        <div class="product">
+            <h2>Camiseta 1</h2>
+            <button class="buy-button" data-amount="2000">Comprar por $20.00</button>
+        </div>
+        <!-- Puedes agregar más productos aquí -->
+    </div>
+
+    <form id="payment-form" style="display: none;">
+        <input type="hidden" id="payment-amount" />
+        <div id="card-element"><!-- Elemento de tarjeta de Stripe se montará aquí --></div>
+        <button type="submit">Pagar</button>
+        <div id="payment-result"></div>
+    </form>
+    
+    <script src="scripts.js"></script> <!-- Asegúrate de incluir tu archivo JS -->
+</body>
+</html>
