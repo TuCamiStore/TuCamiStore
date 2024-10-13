@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuCamiStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="1.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="1.jpg" alt="TuCamiStore Logo">
+            <h1>TuCamiStore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h2>Nuestras camisetas</h2>
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="camiseta1.jpg" alt="Camiseta 1">
+                    <h3>Camiseta Equipo A</h3>
+                    <p>Precio: $29.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="camiseta2.jpg" alt="Camiseta 2">
+                    <h3>Camiseta Equipo B</h3>
+                    <p>Precio: $34.99</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <!-- Añadir más productos -->
+            </div>
+        </section>
+        <section class="carrito">
+            <h2>Tu carrito</h2>
+            <div id="cart-items">
+                <!-- Items del carrito aparecerán aquí -->
+            </div>
+            <div class="total">
+                <p>Total: <span id="total-price">$0.00</span></p>
+                <button id="checkout">Realizar pedido</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 TuCamiStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
