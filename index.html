@@ -3,63 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuCamiStore</title>
+    <title>TuCamiStore - Tienda de camisetas</title>
+    
+    <!-- Vinculamos el archivo CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="1.jpg" type="image/jpg">
+    
+    <!-- Añadir el favicon -->
+    <link rel="icon" href="ruta/a/tu-favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- Encabezado de la tienda -->
     <header>
-        <div class="logo">
-            <img src="1.jpg" alt="TuCamiStore Logo">
-            <h1>TuCamiStore</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Carrito</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Bienvenido a TuCamiStore</h1>
     </header>
 
+    <!-- Sección principal para mostrar productos -->
     <main>
-        <section class="productos">
-            <h2>Nuestras camisetas</h2>
-            <div class="product-grid">
-                <!-- Producto 1 -->
-                <div class="producto">
-                    <img src="camiseta1.jpg" alt="Camiseta 1">
-                    <h3>Camiseta Equipo A</h3>
-                    <p>Precio: $29.99</p>
-                    <button class="add-to-cart">Añadir al carrito</button>
-                </div>
-                <!-- Producto 2 -->
-                <div class="producto">
-                    <img src="camiseta2.jpg" alt="Camiseta 2">
-                    <h3>Camiseta Equipo B</h3>
-                    <p>Precio: $34.99</p>
-                    <button class="add-to-cart">Añadir al carrito</button>
-                </div>
-                <!-- Añadir más productos -->
+        <section id="productos">
+            <!-- Productos -->
+            <div class="producto">
+                <h3>Camiseta 1</h3>
+                <p>Precio: 25 EUR</p>
+                <button onclick="agregarAlCarrito({ nombre: 'Camiseta 1', precio: 25 })">Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3>Camiseta 2</h3>
+                <p>Precio: 30 EUR</p>
+                <button onclick="agregarAlCarrito({ nombre: 'Camiseta 2', precio: 30 })">Añadir al carrito</button>
+            </div>
+            
+            <div class="producto">
+                <h3>Camiseta 3</h3>
+                <p>Precio: 20 EUR</p>
+                <button onclick="agregarAlCarrito({ nombre: 'Camiseta 3', precio: 20 })">Añadir al carrito</button>
             </div>
         </section>
-        <section class="carrito">
-            <h2>Tu carrito</h2>
-            <div id="cart-items">
-                <!-- Items del carrito aparecerán aquí -->
-            </div>
-            <div class="total">
-                <p>Total: <span id="total-price">$0.00</span></p>
-                <button id="checkout">Realizar pedido</button>
-            </div>
+
+        <!-- Botón para realizar el pedido -->
+        <section id="carrito">
+            <button onclick="realizarPedido()">Realizar pedido</button>
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>© 2024 TuCamiStore. Todos los derechos reservados.</p>
+        <p>&copy; 2024 TuCamiStore</p>
     </footer>
 
+    <!-- Vinculamos el archivo JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
